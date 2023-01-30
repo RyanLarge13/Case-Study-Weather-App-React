@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  scroll-padding-top: 20px;
+  scroll-padding-top: 50px;
 }
 
 html {
@@ -56,6 +56,13 @@ h2::first-letter {
   font-size: 2em;
 }
 
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  border-left: 1px solid #000;
+  padding-left: 0.5em;
+}
+
 p {
   font-size: 2em;
 }
@@ -97,16 +104,51 @@ header::before {
 }
 
 .main-img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
   width: 300px;
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0.25em 0.5em 0 #000;
+  box-shadow: 0.5em 1em 1em 0 rgba(0, 0, 0, 0.3);
 }
 
 .main-img img {
   width: 300px;
   height: 400px;
+}
+
+.decor-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0 0 1em 1em;
+}
+
+.decor-container div {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+  box-shadow: 0 0.75em 1em 0 rgba(0, 0, 0, 0.3);
+}
+
+.decor-blue {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 150%;
+  height: 50px;
+  background-image: linear-gradient(45deg, #a6ffcb, #12d8fa, #1fa2ff);
+}
+
+.decor-pink {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 150%;
+  height: 60px;
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
 }
 
 .second-bg img {
@@ -122,7 +164,7 @@ header::before {
   height: 500px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0.25em 0.75em 0 #000;
+  box-shadow: 0.5em 1em 1em 0 rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -155,12 +197,12 @@ nav ul a {
   font-weight: 600;
   transition: 250ms ease-in-out;
   margin: 0 2em;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 nav ul a:hover {
   background-color: #a6ffcb;
-  box-shadow: 0 0.25em 0.75em 0 #000;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -174,7 +216,7 @@ h1 {
   display: block;
   font-size: 2.25em;
   margin: 1em;
-  margin-left: 5%;
+  margin-left: 7%;
   max-width: 50%;
 }
 
@@ -193,7 +235,7 @@ h1 {
   transition: 250ms ease-in-out;
   cursor: pointer;
   font-weight: 600;
-  margin-top: 4em;
+  margin: 2em 5px;
 }
 .goals-sec button:hover {
   color: #fff;
@@ -204,8 +246,71 @@ h1 {
   max-width: 75vw;
 }
 
+.challenges-sec li {
+  margin: 1em 0;
+  margin-left: 2em;
+}
+
+.file-code-container {
+  position: relative;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.3);
+  background-color: #444;
+}
+
+.file-code-container div {
+  position: absolute;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0.5em 0.5em 1em 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.red {
+  right: 10px;
+  background-color: #f88;
+}
+.yellow {
+  right: 35px;
+  background-color: #ff3;
+}
+.green {
+  right: 60px;
+  background-color: #0f8;
+}
+
 .purpose-sec {
   margin-bottom: 20%;
+}
+
+
+.purpose-btns button {
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #a6ffcb;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.3);
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 2em 5px;
+}
+
+.time-container {
+  padding: 1em;
+  margin: 1em;
+  margin-left: 0;
+  border-radius: 10px;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.3);
+  background-color: #444;
+}
+
+.purpose-sec ol {
+  margin-left: 2em;
 }
 
 .tech-grid {
@@ -260,7 +365,7 @@ footer {
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0.25em 0.5em 0 #000;
+    box-shadow: 0.5em 1em 1em 0 rgba(0, 0, 0, 0.3);
   }
 
   .main-img img {
@@ -281,7 +386,7 @@ footer {
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0.25em 0.75em 0 #000;
+    box-shadow: 0.5em 1em 1em 0 rgba(0, 0, 0, 0.3);
   }
   nav {
     margin-bottom: 50px;
@@ -296,7 +401,7 @@ footer {
   }
   .major-heading {
     margin: 0.5em;
-    font-size: 2em;
+    font-size: 2.25em;
   }
   .intro {
     max-width: 75vw;
